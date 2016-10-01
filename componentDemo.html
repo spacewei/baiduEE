@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<input id="show-btn" type="button" value="弹出浮出层">
+<div id="show-this">
+    <input id="username" type="text">
+    <input id="password" type="password">
+    <input id="btn" type="button" value="登录">
+</div>
+<script src="componentDemo.js"></script>
+<script type="text/javascript">
+    $('#show-btn').on('click',function(){
+        var layout = new Component($('#show-this'));
+        layout.init();
+//        (function(){
+//            x.show();
+//        })();
+
+//        alert("!")
+    })
+</script>
+</body>
+</html>
